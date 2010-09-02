@@ -15,6 +15,8 @@ public class ResourceUpdateTaskTest {
 
     @After
     public void after() {
+        new File("target/a.txt").delete();
+        new File("target/b.txt").delete();
         new File("target/c.txt").delete();
         new File("src/test/resources/c/d").delete();
         new File("src/test/resources/c").delete();
